@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+
+    <title>Dev flex</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <a href="#"></a>    
+            <ul class="menu">
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">contato</a></li>
+            <li><a href="#">Produto</a></li>
+
+
+            </ul>  
+    </header>
+
+<h1>Consoles</h1>
+<hr>
+<h2>Aparelhos e dispositivos</h2>
+<br> 
+<section class="container">
+    <div>
+        <img src="Nintendo Switch.png" alt="">
+        <h3>Nintendo Switch</h3>
+    </div>
+    <div>
+        <img src="nintendolite.png" alt="">
+       <strong> <h3>Nintendo Switch lite</h3> </strong>
+    </div>
+     
+    <div>
+        <img src="ps4.png" alt="">
+        <h3>Playstation 4</h3>
+    </div>
+    <div>
+        <img src="ps5.png" alt="">
+        <h3>Playstation 5 </h3>
+    </div>
+    <div>
+        <img src="xboxone.png" alt="xboxone">
+        <h3> Xbox One</h3>
+    </div>
+    <div>
+        <img src="xbox.png" alt="">
+        <h3>Xbox Series X</h3>
+    </div>
+     
+</section>
+
+<br>
+<hr>
+<h1>Acessorios para Nintendo </h1>
+<br>
+<br>
+
+<article class="Mario">
+<div> <img src="joycon.png" alt="">
+    <h4>Joy-con: dois joysticks </h4>
+</div>
+<div>
+<img src="joynin.png" alt="">
+<h4>Joysticks unico para Nintendo Switch</h4>
+
+</div>
+
+<div>
+    <img src="joyps4b.png" alt="">
+    <h4>Joystick Black único para ps4</h4>
+    
+    </div>
+
+    <div>
+        <img src="joyps5.png" alt="">
+        <h4>Joystick White único para ps5</h4>
+        
+        </div>
+
+        <div>
+            <img src="" alt="">
+            
+            </div>
+
+</article>
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif
+}
+
+
+body{
+width: 100%;
+height: 100vh;
+background-color: #1a1a1a;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 20px;
+    width: 100%;
+    height: 60px;
+    background-color: #101010;
+    padding: 10px;
+    align-items: center;
+}   
+
+.logo {width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #ccc; 
+}
+
+.menu{
+list-style: none;
+display:flex
+
+}
+
+.menu li a {
+    color: white;
+    display: block;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+
+}
+
+li a:hover{
+    color: white;
+    display: block;
+    text-decoration: none;
+    background-color: #333;
+}
+
+h1 {
+color: white;
+text-align: center; 
+margin-top: 20px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {color: white;
+text-align: center;
+
+margin-top: 20px;
+}
+
+h3 {color: white;
+    margin: 20px;
+
+text-align: center;
+
+}
+
+
+h4 {color: white;
+    margin: 20px;
+
+text-align: center;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex  ;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.container div {
+    flex: 1 1 350px;
+    margin: 10px;
+}
+
+
+
+img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+ 
+.Mario 
+    {
+        
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex  ;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   
+
+}
